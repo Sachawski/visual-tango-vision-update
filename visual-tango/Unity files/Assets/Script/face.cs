@@ -16,6 +16,7 @@ public class face : MonoBehaviour
         GameObject.Find("Pose").GetComponent<Dropdown>().onValueChanged.AddListener(pose);
         GameObject.Find("Position").GetComponent<Dropdown>().onValueChanged.AddListener(position);
         //GameObject.Find("Rotate").GetComponent<Dropdown>().onValueChanged.AddListener(rotate);
+        //GameObject.Find("RotateAnkle").GetComponent<Dropdown>().onValueChanged.AddListener(rotankle);
     }
 
     // Update is called once per frame
@@ -29,6 +30,7 @@ public class face : MonoBehaviour
     int hei = 0;
     int pos = 0;
     //int rot = 0;
+    int rot_ank = 0;    
 
     // weighted leg pose
     public void show()
@@ -41,6 +43,11 @@ public class face : MonoBehaviour
         Animator ani = leg_l.GetComponent<Animator>();
         GameObject leg_r = GameObject.Find("RightUpLeg");
         Animator ani0 = leg_r.GetComponent<Animator>();
+        GameObject ankle_r = GameObject.Find("RightFoot");
+        Animator ani_ankle_r = ankle_r.GetComponent<Animator>();
+        GameObject ankle_l = GameObject.Find("LeftFoot");
+        Animator ani_ankle_l = ankle_l.GetComponent<Animator>();
+        
         if (wei == 0) // right leg weighted
         {
             ani0.SetInteger("state", 0);
@@ -59,10 +66,10 @@ public class face : MonoBehaviour
                 ani0.SetInteger("hi", 0);
                 ani.SetInteger("hi", 0);
             }
-            
+            ani_ankle_l.SetInteger("state",rot_ank);
+            Debug.Log(rot_ank);
+            ani_ankle_r.SetInteger("state",0);
             ani.SetInteger("state", pos);
-
-
         }
         else
         {
@@ -81,11 +88,33 @@ public class face : MonoBehaviour
             {
                 ani0.SetInteger("hi", 0);
                 ani.SetInteger("hi", 0);
-            }
-            
+            }        
+            ani_ankle_r.SetInteger("state",rot_ank);
+            ani_ankle_l.SetInteger("state",0);
             ani0.SetInteger("state", pos);
             
         }
+    }
+
+    public void rotankle(int value){
+        {
+            switch(value)
+            {
+                case 0:
+                    rot_ank = 0;
+                    break;
+                case 1:
+                    rot_ank = 1;
+                    break;
+                case 2:
+                    rot_ank = 2;
+                    break;
+                case 3:
+                    rot_ank = 3;
+                    break;
+            }
+        }
+        show();
     }
 
     // changing free leg pose
@@ -124,6 +153,7 @@ public class face : MonoBehaviour
                 pos = 10;
                 break;
         }
+
         show();
     }
 

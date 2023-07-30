@@ -317,6 +317,7 @@
 -r:"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.dll"
 -r:"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/mscorlib.dll"
+-r:"Assets/NuGet/Editor/NugetForUnity.dll"
 -r:"Assets/Script/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll"
 -r:"Assets/Script/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"

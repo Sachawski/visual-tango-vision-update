@@ -123,7 +123,7 @@ public class play : MonoBehaviour
         turnAround(streaming.l[k]);
     }
 
-    // rotate
+    //  
     void turnAround(Pose p)
     {
         isTurning.r = p.r;
@@ -175,8 +175,13 @@ public class play : MonoBehaviour
         GameObject model = GameObject.Find("dance");
         GameObject leg_r = GameObject.Find("RightUpLeg");
         GameObject leg_l = GameObject.Find("LeftUpLeg");
+        GameObject ankle_r = GameObject.Find("RightFoot");
+        GameObject ankle_l = GameObject.Find("LeftFoot");
         Animator ani = leg_l.GetComponent<Animator>();
         Animator ani0 = leg_r.GetComponent<Animator>();
+        Animator ani_ankle_r = ankle_r.GetComponent<Animator>();
+        Animator ani_ankle_l = ankle_l.GetComponent<Animator>();
+
 
         // change timescale according to the "speed" sliders
         // if timescale is 2, the timer is 2 times faster, while when timescale is 0.5, the timer is 2 times slower.
@@ -235,6 +240,18 @@ public class play : MonoBehaviour
                     ani.SetInteger("state", 10);
                     break;
             }
+            switch (p.ra)
+            {
+                case 0:
+                    ani_ankle_l.SetInteger("state",0);
+                    break;
+                case 1:
+                    ani_ankle_l.SetInteger("state",1);
+                    break;
+                case 2:
+                    ani_ankle_l.SetInteger("state",2);
+                    break;
+            }
 
         }
         else
@@ -288,7 +305,18 @@ public class play : MonoBehaviour
                     ani0.SetInteger("state", 10);
                     break;
             }
-
+            switch (p.ra)
+            {
+                case 0:
+                    ani_ankle_r.SetInteger("state",0);
+                    break;
+                 case 1:
+                    ani_ankle_r.SetInteger("state",1);
+                    break;
+                case 2:
+                    ani_ankle_r.SetInteger("state",2);
+                    break;
+            }
         }
         GameObject woman = GameObject.Find("Spine");
         Animator ani1 = woman.GetComponent<Animator>();

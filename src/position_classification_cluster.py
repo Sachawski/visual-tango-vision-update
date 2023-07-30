@@ -1,5 +1,5 @@
 import  json
-from BodyPoseDetectionSansCVZone.src.pose import Pose
+from visualtangovisionupdate.src.pose import Pose
 import numpy as np
 from numpy import array
 from mpl_toolkits import mplot3d

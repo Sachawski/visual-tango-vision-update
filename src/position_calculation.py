@@ -200,7 +200,7 @@ with mp_pose.Pose(min_detection_confidence=0.5,min_tracking_confidence=0.5) as p
             print(lmList[23:,:])
             print("")
             print(new_lmList[23:,:])
-            all_position[str(frame)] = new_lmList[23:,:].tolist()
+            all_position[str(frame)] = new_lmList[27:,:].tolist()
             #adding each angle of articulation to a dictionnary
             #print(new_lmList)
             img = cv2.resize(img, (960, 540)) 
@@ -218,6 +218,6 @@ cv2.destroyAllWindows()
 video.release()
 
 #writing the result in a text file
-with open("output/suiteposition.json",'w') as file:
+with open("output/suiteposition_feet.json",'w') as file:
     json.dump(all_position,file)
     file.close()

@@ -1,0 +1,348 @@
+Unity Editor version:    2022.3.4f1 (35713cd46cd7)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #50-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 10 18:24:29 UTC 2023
+Kernel version:          5.19.0-50-generic
+Architecture:            x86_64
+Available memory:        5796 MB
+Using pre-set license
+Pro License: YES
+Desktop is 1920 x 1080 @ 60 Hz
+Initialize udev device monitor.
+
+COMMAND LINE ARGUMENTS:
+Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/visual-tango/Unity files
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+39241
+Successfully changed project path to: /home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/visual-tango/Unity files
+/home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/visual-tango/Unity files
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [139645260682176] Host "[IP] 192.168.1.211 [Port] 0 [Flags] 2 [Guid] 421015917 [EditorId] 421015917 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.211) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [139645260682176] Host "[IP] 192.168.1.211 [Port] 0 [Flags] 2 [Guid] 421015917 [EditorId] 421015917 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.211) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 7,44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Initialize engine version: 2022.3.4f1 (35713cd46cd7)
+[Subsystems] Discovering subsystems at path /home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/visual-tango/Unity files/Assets
+GLX Extensions: GLX_ARB_context_flush_control GLX_ARB_create_context GLX_ARB_create_context_no_error GLX_ARB_create_context_profile GLX_ARB_create_context_robustness GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_buffer_age GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_no_config_context GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_visual_info GLX_EXT_visual_rating GLX_INTEL_swap_event GLX_MESA_copy_sub_buffer GLX_MESA_query_renderer GLX_MESA_swap_control GLX_OML_swap_method GLX_OML_sync_control GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_SGI_make_current_read GLX_SGI_swap_control GLX_SGI_video_sync 
+Renderer: AMD Radeon Vega 3 Graphics (raven2, LLVM 15.0.7, DRM 3.47, 5.19.0-50-generic)
+Vendor:   AMD
+Version:  4.6 (Core Profile) Mesa 22.2.5-0ubuntu0.1~22.04.3
+GLES:     0
+ GL_AMD_conservative_depth GL_AMD_depth_clamp_separate GL_AMD_draw_buffers_blend GL_AMD_framebuffer_multisample_advanced GL_AMD_gpu_shader_int64 GL_AMD_multi_draw_indirect GL_AMD_performance_monitor GL_AMD_pinned_memory GL_AMD_query_buffer_object GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_stencil_export GL_AMD_shader_trinary_minmax GL_AMD_texture_texture4 GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_ES2_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_dist
+ance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_draw_indirect GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_shader GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel
+_buffer_object GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_stencil_export GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensio
+ns GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex
+_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_meminfo GL_ATI_texture_float GL_ATI_texture_mirror_once GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_depth_bounds_test GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_text
+ure_integer GL_EXT_texture_mirror_clamp GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NVX_gpu_memory_info GL_NV_alpha_to_coverage_dither_control GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_packed_depth_stencil GL_NV_shader_atomic_int64 GL_NV_texture_barrier GL_NV_vdpau_interop GL_OES_EGL_image GL_S3_s
+3tc
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1630252544
+Initialize mono
+Mono path[0] = '/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
+Mono path[1] = '/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
+Mono config path = '/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56201
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0,012411 seconds.
+- Loaded All Assemblies, in  0,713 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0,650 seconds
+Domain Reload Profiling: 1363ms
+	BeginReloadAssembly (239ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (140ms)
+	LoadAllAssembliesAndSetupDomain (262ms)
+		LoadAssemblies (235ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (253ms)
+			TypeCache.Refresh (251ms)
+				TypeCache.ScanAssembly (232ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (651ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (518ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (345ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Assembly 'Library/ScriptAssemblies/Mediapipe.Runtime.Tests.dll' will not be loaded due to errors:
+Unable to resolve reference 'nunit.framework'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+- Loaded All Assemblies, in  1,069 seconds
+Refreshing native plugins compatible for Editor in 4,35 ms, found 2 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0,881 seconds
+Domain Reload Profiling: 1950ms
+	BeginReloadAssembly (237ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (98ms)
+	LoadAllAssembliesAndSetupDomain (662ms)
+		LoadAssemblies (441ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (319ms)
+			TypeCache.Refresh (307ms)
+				TypeCache.ScanAssembly (281ms)
+			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (882ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (565ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (394ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3,86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 668 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (47,7 KB). Loaded Objects now: 1130.
+Memory consumption went from 60,0 MB to 59,9 MB.
+Total: 4,534584 ms (FindLiveObjects: 0,115169 ms CreateObjectMapping: 0,025772 ms MarkObjects: 4,185727 ms  DeleteObjects: 0,199327 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/StringPacketTest.cs: fc0a5fce96ffcbb0f9530cfa82ef3165 -> 
+  custom:scripting/monoscript/fileName/GlCalculatorHelperTest.cs: 4c8375bfd8d0ab6d65fccfd701e7d47a -> 
+  custom:scripting/monoscript/fileName/StatusOrImageFrameTest.cs: 5e4bfa7855e5c3152f2c1a5557f038ff -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TimestampTest.cs: 7d36bc8c5bc6687eb9e82d41832d1b2f -> 
+  custom:scripting/precompiled-assembly-types:Mediapipe.Runtime.Tests: e043faab5c3b95475b5e13334edf73d5 -> 
+  custom:scripting/monoscript/fileName/GlContextTest.cs: 821e9c4c1d9511da4aefc9d1f97393a1 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/ValidatedGraphConfigTest.cs: bdcefff2922c8f7081380f57bcd9ad35 -> 
+  custom:scripting/monoscript/fileName/GlTextureTest.cs: d89adcbc0dab6dcf308460730fbdc726 -> 
+  custom:scripting/monoscript/fileName/ImageCoordinateTest.cs: 937f94f0ea69cc698d3e3850fbe5c638 -> 
+  custom:scripting/monoscript/fileName/BoolPacketTest.cs: e160fa9e5b21ff6cea62f32a5df7605a -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/MatrixPacketTest.cs: 03da318a8232ebe506cafae5bba0ee20 -> 
+  custom:scripting/monoscript/fileName/ImageFrameTest.cs: 42692db4827f3b48ba76083c9a4099a8 -> 
+  custom:scripting/monoscript/fileName/FloatVectorPacketTest.cs: 5d395180e95aa6884def5ab193c10083 -> 
+  custom:scripting/monoscript/fileName/StatusOrGpuResourcesTest.cs: 157ba344d0642ef4303b28a65aaab8fd -> 
+  custom:scripting/monoscript/fileName/GpuResourcesTest.cs: 8b94890c388e81417b2abf3522879e2d -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:scripting/monoscript/fileName/CalculatorGraphTest.cs: 94c47d84a09a58cce475ab08221c2a53 -> 
+  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
+  custom:scripting/precompiled-assembly-types:MathNet.Numerics: 39ce660a35e976abf556dcd48f49d2b9 -> 
+  custom:scripting/monoscript/fileName/FloatArrayPacketTest.cs: 213ab6f0336fce469f76515f9b4b3546 -> 
+  custom:scripting/precompiled-assembly-types:nunit.framework: 9e37b1c68f8f6252093016bd0558a3b5 -> 
+  custom:scripting/monoscript/fileName/SidePacketTest.cs: 3d2bec518a094888969dd6121cd46172 -> 
+  custom:scripting/monoscript/fileName/GpuOnlyAttribute.cs: 7b794d5ba57866c8e5a2d2765483f20a -> 
+  custom:scripting/monoscript/fileName/ValidateNameTest.cs: 09b96a8cff9847a83067247278da1a7d -> 
+  custom:scripting/monoscript/fileName/ImageFramePacketTest.cs: 489646f750e07be4c0631b7f369993eb -> 
+  custom:scripting/monoscript/fileName/FloatPacketTest.cs: 79c1059fbd49492cc6d1b9281ae2d02d -> 
+  custom:scripting/monoscript/fileName/StatusOrStringTest.cs: a4c1dc55f1b84449ef210c9232ef413d -> 
+  custom:scripting/monoscript/fileName/PacketTest.cs: f122a8dd0f16a332c45c15af0ce0690f -> 
+  custom:scripting/monoscript/fileName/NameUtilTest.cs: 85be1aa26fd2b7cd9759665ee8c5cc45 -> 
+  custom:scripting/monoscript/fileName/ImageFrameExtensionTest.cs: d2d6995c29ac5de1a1085a99da561249 -> 
+  custom:scripting/monoscript/fileName/process_video.cs: 4b4d7a16fa9cab6276e7b94258e51d01 -> 
+  custom:scripting/precompiled-assembly-types:OpenCvSharp: 6dd89ec07ab9eb1419294f6d5d4d4b6b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignalAbortAttribute.cs: f59f30193b899e068c0049c39d54b0e5 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/StatusTest.cs: cd7745a1646f035bc0f837d2b4a71430 -> 
+  custom:scripting/precompiled-assembly-types:System.Runtime.CompilerServices.Unsafe: 732fcc61344223a8313adf09ba5ea714 -> 4f83dd30d4d7964b63b36d2fe1e95684
+========================================================================
+Received Import Request.
+  Time since last request: 32635,052541 seconds.
+  path: Packages/com.github.homuler.mediapipe/package.json
+  artifactKey: Guid(c02cadc1a4a73c6b08975fee7a8660ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.github.homuler.mediapipe/package.json using Guid(c02cadc1a4a73c6b08975fee7a8660ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75428961a492ae8057d58a4a70ff5fa') in 0,019978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 17,194980 seconds.
+  path: Packages/com.github.homuler.mediapipe/Runtime/Mediapipe.Runtime.asmdef
+  artifactKey: Guid(04c4d86a70aa56c55a78c61f1ab1a56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.github.homuler.mediapipe/Runtime/Mediapipe.Runtime.asmdef using Guid(04c4d86a70aa56c55a78c61f1ab1a56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f653afb61036baab0297a9457e7bb0') in 0,001041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12,430839 seconds.
+  path: Assets/material/floor.mat
+  artifactKey: Guid(f2e9a95fb18324713912ffe0a5cccb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/material/floor.mat using Guid(f2e9a95fb18324713912ffe0a5cccb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d013e5bf9d2cd3b4165391afc4868e3') in 0,245836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0,000049 seconds.
+  path: Assets/material/Wood.png
+  artifactKey: Guid(094a0553de3ee483db77447aefce3714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/material/Wood.png using Guid(094a0553de3ee483db77447aefce3714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6d2a70873c8fb560975fdfabcc2dba8') in 0,023301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0,889 seconds
+Refreshing native plugins compatible for Editor in 3,42 ms, found 1 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0,747 seconds
+Domain Reload Profiling: 1634ms
+	BeginReloadAssembly (226ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (533ms)
+		LoadAssemblies (334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (303ms)
+			TypeCache.Refresh (297ms)
+				TypeCache.ScanAssembly (279ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (747ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (459ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (306ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 3,71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 364 unused Assets / (214,2 KB). Loaded Objects now: 818.
+Memory consumption went from 50,6 MB to 50,4 MB.
+Total: 4,610432 ms (FindLiveObjects: 0,125714 ms CreateObjectMapping: 0,023047 ms MarkObjects: 4,017480 ms  DeleteObjects: 0,434553 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/StringPacketTest.cs: fc0a5fce96ffcbb0f9530cfa82ef3165 -> 
+  custom:scripting/monoscript/fileName/GlCalculatorHelperTest.cs: 4c8375bfd8d0ab6d65fccfd701e7d47a -> 
+  custom:scripting/monoscript/fileName/StatusOrImageFrameTest.cs: 5e4bfa7855e5c3152f2c1a5557f038ff -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TimestampTest.cs: 7d36bc8c5bc6687eb9e82d41832d1b2f -> 
+  custom:scripting/monoscript/fileName/GlContextTest.cs: 821e9c4c1d9511da4aefc9d1f97393a1 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/ValidatedGraphConfigTest.cs: bdcefff2922c8f7081380f57bcd9ad35 -> 
+  custom:scripting/monoscript/fileName/GlTextureTest.cs: d89adcbc0dab6dcf308460730fbdc726 -> 
+  custom:scripting/monoscript/fileName/ImageCoordinateTest.cs: 937f94f0ea69cc698d3e3850fbe5c638 -> 
+  custom:scripting/monoscript/fileName/BoolPacketTest.cs: e160fa9e5b21ff6cea62f32a5df7605a -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/MatrixPacketTest.cs: 03da318a8232ebe506cafae5bba0ee20 -> 
+  custom:scripting/monoscript/fileName/ImageFrameTest.cs: 42692db4827f3b48ba76083c9a4099a8 -> 
+  custom:scripting/monoscript/fileName/FloatVectorPacketTest.cs: 5d395180e95aa6884def5ab193c10083 -> 
+  custom:scripting/monoscript/fileName/StatusOrGpuResourcesTest.cs: 157ba344d0642ef4303b28a65aaab8fd -> 
+  custom:scripting/monoscript/fileName/GpuResourcesTest.cs: 8b94890c388e81417b2abf3522879e2d -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:scripting/monoscript/fileName/CalculatorGraphTest.cs: 94c47d84a09a58cce475ab08221c2a53 -> 
+  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
+  custom:scripting/monoscript/fileName/FloatArrayPacketTest.cs: 213ab6f0336fce469f76515f9b4b3546 -> 
+  custom:scripting/monoscript/fileName/SidePacketTest.cs: 3d2bec518a094888969dd6121cd46172 -> 
+  custom:scripting/monoscript/fileName/GpuOnlyAttribute.cs: 7b794d5ba57866c8e5a2d2765483f20a -> 
+  custom:scripting/monoscript/fileName/ValidateNameTest.cs: 09b96a8cff9847a83067247278da1a7d -> 
+  custom:scripting/monoscript/fileName/ImageFramePacketTest.cs: 489646f750e07be4c0631b7f369993eb -> 
+  custom:scripting/monoscript/fileName/FloatPacketTest.cs: 79c1059fbd49492cc6d1b9281ae2d02d -> 
+  custom:scripting/monoscript/fileName/StatusOrStringTest.cs: a4c1dc55f1b84449ef210c9232ef413d -> 
+  custom:scripting/monoscript/fileName/PacketTest.cs: f122a8dd0f16a332c45c15af0ce0690f -> 
+  custom:scripting/monoscript/fileName/NameUtilTest.cs: 85be1aa26fd2b7cd9759665ee8c5cc45 -> 
+  custom:scripting/monoscript/fileName/ImageFrameExtensionTest.cs: d2d6995c29ac5de1a1085a99da561249 -> 
+  custom:scripting/monoscript/fileName/process_video.cs: 4b4d7a16fa9cab6276e7b94258e51d01 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignalAbortAttribute.cs: f59f30193b899e068c0049c39d54b0e5 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/StatusTest.cs: cd7745a1646f035bc0f837d2b4a71430 -> 

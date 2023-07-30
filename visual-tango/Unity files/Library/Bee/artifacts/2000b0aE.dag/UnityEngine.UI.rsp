@@ -313,6 +313,7 @@
 -r:"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
 -r:"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 -r:"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
+-r:"Assets/NuGet/Editor/NugetForUnity.dll"
 -r:"Assets/Script/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll"
 -r:"Assets/Script/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll"
 -analyzer:"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"

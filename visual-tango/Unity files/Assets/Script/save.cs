@@ -6,14 +6,15 @@ using UnityEngine.UI;
 // a class which keeps all the information for each step
 public class Pose
 {
-    public int d = 0;
-    public int w = 0;
-    public int p = 0;
-    public int h = 0;
-    public int t = 2;
-    public int r = 0;
+    public int d = 0; // facedirection
+    public int w = 0; // weighted leg
+    public int p = 0; // pose 
+    public int h = 0; // position of the weighted leg (height)
+    public int t = 2; // slider (execution speed)
+    public int r = 0; // body rotation
+    public int ra = 0; // ankle rotation
 
-    public void init(int dd = 0, int ww = 0, int pp = 0, int hh = 0, int tt = 0, int rr = 0)
+    public void init(int dd = 0, int ww = 0, int pp = 0, int hh = 0, int tt = 0, int rr = 0, int rraa = 0)
     {
         d = dd;
         w = ww;
@@ -21,6 +22,7 @@ public class Pose
         h = hh;
         t = tt;
         r = rr;
+        ra = rraa;
     }
 }
 
@@ -84,6 +86,7 @@ public class save : MonoBehaviour
     string[] Leg = { "right", "left" };
     string[] Direction = { "north", "northwest", "northeast" };
     int[] angle = { 0, 30, 60, 90, 120, 150, 180, 270, 360 };
+    string[] rota_ankle = {"none","right","left"};
     // Start is called before the first frame update
     void Start()
     {
@@ -110,6 +113,7 @@ public class save : MonoBehaviour
         int h = GameObject.Find("Position").GetComponent<Dropdown>().value;
         int r = angle[GameObject.Find("Rotate").GetComponent<Dropdown>().value];
         int t = (int)GameObject.Find("Slider").GetComponent<Slider>().value;
+        int ra = GameObject.Find("RotateAnkle").GetComponent<Dropdown>().value;
 
         Toggle rotate_dir = GameObject.Find("rotate_dir").GetComponent<Toggle>();
         if (!rotate_dir.isOn)
@@ -117,7 +121,7 @@ public class save : MonoBehaviour
 
         Pose tmp = new Pose();
         // save the pose
-        tmp.init(d, w, p, h, t, r);
+        tmp.init(d, w, p, h, t, r, ra);
         List<Pose> tmplist = new List<Pose>();
         // for insertion we need to have a new list for the poses
         for (int i = 0; i < selected.select; ++i)
@@ -175,6 +179,8 @@ public class save : MonoBehaviour
             text.text += (l[i].t).ToString();
             text.text += ", ";
             text.text += (l[i].r).ToString();
+            text.text += ", ";
+            text.text += (l[i].ra).ToString();
             text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             text.fontSize = 14;
             text.fontStyle = FontStyle.Normal;
