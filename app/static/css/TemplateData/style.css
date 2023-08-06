@@ -1,16 +1,167 @@
-body { padding: 0; margin: 0 }
-#unity-container { position: absolute }
-#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
-#unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
-#unity-canvas { background: #231F20 }
-.unity-mobile #unity-canvas { width: 100%; height: 100% }
-#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
-#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
-#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
-#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { position: relative }
-.unity-mobile #unity-footer { display: none }
-#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
-#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #Fefee2;
+}
+
+
+.div_form {
+    font-family: Arial, sans-serif;
+    margin:auto;
+    display:flex;   
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:50px;
+    max-width: 500px;
+}
+
+form {
+    padding: 20px;
+    padding-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffd4;
+
+}
+
+
+.spinner {
+    width: 1em;
+    height: 1em;
+    border: 0.5em solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7983ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+to {
+    transform: rotate(360deg);
+}
+}
+/* Styliser les titres des formulaires */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Styliser les étiquettes des champs de saisie de fichiers */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styliser les champs de saisie de fichiers */
+form input[type="file"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    width:270px;
+}
+
+/* Styliser les boutons d'envoi */
+form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ebd672;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Changer l'apparence du bouton d'envoi au survol */
+form input[type="submit"]:hover {
+    background-color: #d1b946;
+}
+
+/* Changer l'apparence du bouton d'envoi lorsqu'il est cliqué */
+form input[type="submit"]:active {
+    background-color: #a5933a;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 1em;
+    border: 2px solid #ccc;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:  	#ffffd4;
+}
+
+.bar {
+    /* font-size: 10px */
+    width: 30em;
+    height: 1em;
+    border-radius: 0.5em;
+    position: relative;
+    background: #f2f2f2;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)
+}
+
+.bar .percentage {
+    position: relative;
+    font-size: 1em;
+    background: tomato;
+    height: 1em;
+    border-radius: 0.5em
+}
+
+.has-tip:before,
+.has-tip:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+}
+
+.has-tip:before {
+    bottom: -10px;
+    right: -5px;
+    border: 5px solid;
+    border-color: transparent transparent tomato transparent;
+    transition: opacity 0.1s;
+}
+
+.has-tip:after {
+    content: attr(data-perc);
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+    padding: 0.6em 1em;
+    border-radius: 2em;
+    line-height: 1;
+    color: #fff;
+    background: tomato;
+    transform: translateX(50%) translateY(100%);
+    transition: transform 0.2s, opacity 0.1s;
+}
+
+.has-tip:hover:before,
+.has-tip.active:before {
+  opacity: 1;
+}
+
+.has-tip:hover:after,
+.has-tip.active:after {
+  opacity: 1;
+  transform: translateX(50%) translateY(100%) translateY(10px);
+}
+
+
+  

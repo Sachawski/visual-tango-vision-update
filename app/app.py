@@ -19,8 +19,8 @@ def index():
 
 @app.route('/classification', methods=['POST'])
 def classification():
-    if request.method == 'POST' and 'input_file' in request.files:
-        file = request.files['input_file']
+    if request.method == 'POST' and 'input_file1' in request.files:
+        file = request.files['input_file1']
         if file.filename == '':
         # Gérer le cas où aucun fichier n'est sélectionné
             return render_template('index.html')
@@ -80,8 +80,8 @@ def classification():
 
 @app.route('/modelisation', methods=['POST'])
 def modelisation():
-    if request.method == 'POST' and 'input_file' in request.files:
-        file = request.files['input_file']
+    if request.method == 'POST' and 'input_file2' in request.files:
+        file = request.files['input_file2']
         if file.filename == '':
         # Gérer le cas où aucun fichier n'est sélectionné
             return render_template('index.html')
