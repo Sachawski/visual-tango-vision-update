@@ -18,6 +18,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEngine.UI.dll:
@@ -142,17 +143,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 18462}
+      Script: {instanceID: 18326}
     - Class: 114
-      Script: {instanceID: 18464}
+      Script: {instanceID: 18328}
     - Class: 114
-      Script: {instanceID: 22726}
+      Script: {instanceID: 27996}
     - Class: 114
-      Script: {instanceID: 22732}
+      Script: {instanceID: 28002}
     - Class: 114
-      Script: {instanceID: 22738}
+      Script: {instanceID: 28008}
     - Class: 114
-      Script: {instanceID: 22740}
+      Script: {instanceID: 28010}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -473,4 +474,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /home/sacha/Desktop/classification
+  playerPath: /home/sacha/Desktop/visualtango
