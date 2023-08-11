@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Tango</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='css/TemplateData/favicon.ico') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='webgl/classification/TemplateData/style.css') }}" />
+    <link rel="shortcut icon" href="../../../static/css/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="../../../static/webgl/visualtango/TemplateData/style.css" />
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -56,12 +56,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "{{ url_for('static', filename='webgl/classification/build')}}";
-      var loaderUrl ="{{ url_for('static', filename='webgl/classification/build/classification.loader.js')}}";
+      var buildUrl = "../../../static/webgl/visualtango/build";
+      var loaderUrl ="../../../static/webgl/visualtango/build/visualtango.loader.js";
       var config = {
-        dataUrl: "{{ url_for('static', filename='webgl/classification/build/classification.data')}}",
-        frameworkUrl: "{{ url_for('static', filename='webgl/classification/build/classification.framework.js')}}",
-        codeUrl: "{{ url_for('static', filename='webgl/classification/build/classification.wasm')}}",
+        dataUrl: "../../../static/webgl/visualtango/build/visualtango.data",
+        frameworkUrl: "../../../static/webgl/visualtango/build/visualtango.framework.js",
+        codeUrl: "../../../static/webgl/visualtango/build/visualtango.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Tango",
