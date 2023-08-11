@@ -25,7 +25,7 @@ public class load_file : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(OutputRoutineOpen("http://127.0.0.1:5000/static/temp/save.txt"));
+        StartCoroutine(OutputRoutineOpen("../../static/temp/save.txt"));
     }
 
     // Update is called once per frame
