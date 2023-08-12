@@ -131,5 +131,5 @@ for i in range(8037, 8093):
 
 # Write poses back to file.
 all_poses_string = str(all_poses)
-with open("static/output/suiteposition.txt", 'w') as file:
+with open("src/output/suiteposition.txt", 'w') as file:
     file.write(all_poses_string)

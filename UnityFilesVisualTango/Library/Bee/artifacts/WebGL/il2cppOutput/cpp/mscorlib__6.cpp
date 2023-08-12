@@ -6709,7 +6709,7 @@ IL_00bb:
 		__this->___stdout = L_27;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___stdout), (void*)L_27);
 		CStreamWriter_t3311453DAB9CB3E60FD80FD196E9421A8EDF8239* L_28 = __this->___stdout;
-		VirtualActionInvoker1< bool >::Invoke(15, L_28, (bool)1);
+		VirtualActionInvoker1< bool >::Invoke(13, L_28, (bool)1);
 		return;
 	}
 

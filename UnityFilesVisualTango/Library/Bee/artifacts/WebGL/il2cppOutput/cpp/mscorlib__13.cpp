@@ -29772,17 +29772,6 @@ IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void StreamWriter_Write_m196
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void StreamWriter_WriteLine_m88BA0BCC5465C3C8DDEDE09BD59BABAD870C9CBE (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, String_t* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		StreamWriter_CheckAsyncTaskInProgress_m22A80352D48CB1E0C0DE8E721251B0A120503A06(__this, NULL);
-		String_t* L_0 = ___0_value;
-		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_1;
-		L_1 = String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline(L_0, NULL);
-		StreamWriter_WriteSpan_m4323CA2DB888C07C38F7BD88641DA7D56489BE66_inline(__this, L_1, (bool)1, NULL);
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__cctor_m949BEC9E005A50769ACD3AB661359AE1086D5135 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

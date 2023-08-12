@@ -14,18 +14,29 @@ public class load_file : MonoBehaviour
     [DllImport("__Internal")]
     private static extern void UploadFile(string gameObjectName,string methodName,string filter,bool multiple);
     
+    #if UNITY_WEBGL && !UNITY_EDITOR
+    [DllImport("__Internal")]
+    private static extern string GetURLFromPage();
+    [DllImport("__Internal")]
+    private static extern string GetIDFromPage();
+    #endif
+
     string[] Name = { "Collected", "Corssed forward", "Forward", "Backward", "In air forward", "In air backward", "Slide outside", "Wrapped around", "Collected high", "Crossed backward" };
     string[] Height = { "straight", "bent", "tiptoe" };
     string[] Leg = { "right", "left" };
     string[] Direction = { "north", "northwest", "northeast" };
     int[] angle = { 0, 30, 60, 90, 120, 150, 180, 270, 360 };
+    private string url = "";
+    private string id = "";
   
   
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(OutputRoutineOpen("../../static/temp/save.txt"));
+        #if UNITY_WEBGL && !UNITY_EDITOR
+        StartCoroutine(OutputRoutineOpen(url));
+        #endif  
     }
 
     // Update is called once per frame
@@ -38,6 +49,10 @@ public class load_file : MonoBehaviour
     {
         Button button = gameObject.GetComponent<Button>() as Button;
         button.onClick.AddListener(Load);
+        #if UNITY_WEBGL && !UNITY_EDITOR
+        id = GetIDFromPage();
+        url = GetURLFromPage() + "/static/temp/save_"+id+".txt";
+        #endif
     }
     
     void Load()
@@ -45,12 +60,10 @@ public class load_file : MonoBehaviour
         UploadFile(gameObject.name, "OnFileUpload", ".txt", false);
     }
 
-    public void OnFileUpload(string url) {
-    	Debug.Log("donne l'"+url);
-        Console.WriteLine("donne l'"+url);
+    public void OnFileUpload(string url) 
+    {
         StartCoroutine(OutputRoutineOpen(url));
-        
-        }
+    }
 
 
 private IEnumerator OutputRoutineOpen(string url)
@@ -67,7 +80,6 @@ private IEnumerator OutputRoutineOpen(string url)
         byte[] bytes = www.downloadHandler.data;
 
         string s = new UTF8Encoding().GetString(bytes);
-        Debug.Log("ceci est cela" + s);
 
         clear();
         for (int i = 0; i < s.Length; i += 6)
@@ -79,7 +91,6 @@ private IEnumerator OutputRoutineOpen(string url)
             p.r = Int32.Parse(s[i + 3].ToString());
             p.t = Int32.Parse(s[i + 4].ToString());
             p.w = Int32.Parse(s[i + 5].ToString());
-            Debug.Log(p.p);
             streaming.l.Add(p);
             total.tot += 1;
         }

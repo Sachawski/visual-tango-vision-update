@@ -20,12 +20,12 @@ def dict2array(dic):
 print(dict2array(angle_for_classification[1]))
 """
 if __name__ == '__main__':
-    with open("static/output/suiteangle.txt", 'r') as file:
+    with open("src/output/suiteangle.txt", 'r') as file:
         anglestring = file.read()
     angle_dict = ast.literal_eval(anglestring)
     file.close()
 
-    with open("static/output/angle_for_classification.txt", 'r') as file:
+    with open("src/output/angle_for_classification.txt", 'r') as file:
         angle_for_classification = file.read()
     angle_for_classification = ast.literal_eval(angle_for_classification)
     file.close()

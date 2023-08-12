@@ -20,10 +20,9 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def generate_unique_filename(filename,id):
     base_filename, file_extension = os.path.splitext(filename)
     
-    if not os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'],f"{base_filename}_{id}{file_extension}")):
-        return f"{base_filename}_{id}{file_extension}"
-    else :
-        return "ERROR"
+    #if not os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'],f"{base_filename}_{id}{file_extension}")):
+    return f"{base_filename}_{id}{file_extension}"
+
 
 def generate_unique_identifier():
     return datetime.now().strftime('%Y%m%d%H%M%S%f')
@@ -61,14 +60,15 @@ def index():
     identifier = generate_unique_identifier()
     return render_template('index.html',id=identifier)
 
-@app.route('/visualtango', methods=['POST'])
-def visualtango(): 
-    with open("static/temp/save.txt", "wb") as output_file:
-            output_file.write(bytearray("",'utf-8'))
-    return render_template('visualtango.html')
+@app.route('/visualtango/<id>', methods=['POST'])
+def visualtango(id): 
+    filename_save = generate_unique_filename("save.txt",id)
+    with open(f"static/temp/{filename_save}", "w") as output_file:
+            output_file.write("000030")
+    return render_template('visualtango.html',id=id)
 
-@app.route('/classification', methods=['POST'])
-def classification():
+@app.route('/classification/<id>', methods=['POST'])
+def classification(id):
     if request.method == 'POST' and 'input_file1' in request.files:
         file = request.files['input_file1']
         if file.filename == '':
@@ -77,6 +77,7 @@ def classification():
         
         poses=[]
         filename = secure_filename(file.filename)
+        print(filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         #all_poses={}
         #nompose = "Test" # Get corresponding pose name.
@@ -85,7 +86,7 @@ def classification():
         os.remove(f'{UPLOAD_FOLDER}/{file.filename}')
         #s = angle_classification(poses,all_poses)
         
-        with open("static/output/angle_for_classification.txt", 'r') as file:
+        with open("src/output/angle_for_classification.txt", 'r') as file:
             angle_for_classification = file.read()
             angle_for_classification = ast.literal_eval(angle_for_classification)
             file.close()
@@ -119,12 +120,15 @@ def classification():
 
         data = bytearray(to_save,'utf-8')
         print(data)
+        
+        filename_save = generate_unique_filename("save.txt",id)
+        print(to_save)
+        print(filename_save)
+        with open(f"static/temp/{filename_save}", "w") as output_file:
+            output_file.write(to_save)
 
-        with open("static/temp/save.txt", "wb") as output_file:
-            output_file.write(data)
 
-
-        return render_template('visualtango.html', token=s)
+        return render_template('visualtango.html', id=id)
 	
     return render_template('index.html')
 

@@ -7,7 +7,7 @@ def frobenius(mat1,mat2):
 	return np.linalg.norm(mat1-mat2,'fro')
 	
 def angle_classification(poses,all_poses):
-	with open("/static/output/angle_for_classification.txt", 'r') as file:
+	with open("/src/output/angle_for_classification.txt", 'r') as file:
 		angle_for_classification = file.read()
 		angle_for_classification = ast.literal_eval(angle_for_classification)
 		file.close() 

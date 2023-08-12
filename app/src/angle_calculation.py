@@ -222,7 +222,7 @@ def process_image(file):
 if __name__ == "__main__":
     all_poses={}
     # Read pose names from a file.
-    with open("static/input/pose_names.txt", 'r') as file:
+    with open("src/input/pose_names.txt", 'r') as file:
         pose_names = [line.strip() for line in file]
 
     # Process each image.
@@ -234,6 +234,6 @@ if __name__ == "__main__":
 
     # Write poses back to file.
     all_poses_string = str(all_poses)
-    with open("static/output/suiteangle.txt", 'w') as file:
+    with open("src/output/suiteangle.txt", 'w') as file:
         file.write(all_poses_string)
 """

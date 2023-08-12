@@ -4743,13 +4743,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriter_Dispose_m5B2CA4D250335AB11031
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TextWriter_get_NewLine_m413E73EE9EC97DBCA7FC947A8DF960E88E50B858 (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* __this, const RuntimeMethod* method) 
-{
-	{
-		String_t* L_0 = __this->___CoreNewLineStr;
-		return L_0;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriter_Write_mCD2CEA1E28A414BBFD2B39B7D30B67E418436A70 (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* __this, Il2CppChar ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4768,7 +4761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriter_Write_m3ACB231EA0FE4B5CAA6E7D
 	{
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = ___0_buffer;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_2 = ___0_buffer;
-		VirtualActionInvoker3< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, int32_t, int32_t >::Invoke(12, __this, L_1, 0, ((int32_t)(((RuntimeArray*)L_2)->max_length)));
+		VirtualActionInvoker3< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, int32_t, int32_t >::Invoke(11, __this, L_1, 0, ((int32_t)(((RuntimeArray*)L_2)->max_length)));
 	}
 
 IL_000e:
@@ -4849,7 +4842,7 @@ IL_0052:
 		int32_t L_12 = V_0;
 		int32_t L_13 = ((int32_t)il2cpp_codegen_add(L_11, L_12));
 		uint16_t L_14 = (uint16_t)(L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
-		VirtualActionInvoker1< Il2CppChar >::Invoke(10, __this, L_14);
+		VirtualActionInvoker1< Il2CppChar >::Invoke(9, __this, L_14);
 		int32_t L_15 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_15, 1));
 	}
@@ -4880,32 +4873,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriter_Write_m842F7A5F9743993C1A411E
 		String_t* L_1 = ___0_value;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_2;
 		L_2 = String_ToCharArray_m0699A92AA3E744229EF29CB9D943C47DF4FE5B46(L_1, NULL);
-		VirtualActionInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* >::Invoke(11, __this, L_2);
+		VirtualActionInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* >::Invoke(10, __this, L_2);
 	}
 
 IL_000f:
 	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriter_WriteLine_m39B92A81879DE0AFD47CA61019E403F8BE60220E (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* __this, String_t* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		String_t* L_0 = ___0_value;
-		if (!L_0)
-		{
-			goto IL_000a;
-		}
-	}
-	{
-		String_t* L_1 = ___0_value;
-		VirtualActionInvoker1< String_t* >::Invoke(13, __this, L_1);
-	}
-
-IL_000a:
-	{
-		String_t* L_2 = __this->___CoreNewLineStr;
-		VirtualActionInvoker1< String_t* >::Invoke(13, __this, L_2);
 		return;
 	}
 }
@@ -5012,12 +4984,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTextWriter_Write_mA8BDCEAD3C1B0AA3C4
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTextWriter_WriteLine_m08F9A563526349468E3D8B675C3C1D9328CC5A86 (NullTextWriter_tD77A7454CBDCA629E9FFCD93B21B7A0B4856C88F* __this, String_t* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTextWriter_Write_m07AA1FA1B106CA85E04D6CF44E325A38E9BE7413 (NullTextWriter_tD77A7454CBDCA629E9FFCD93B21B7A0B4856C88F* __this, Il2CppChar ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -5061,15 +5027,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SyncTextWriter_get_FormatProvi
 		return L_1;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SyncTextWriter_get_NewLine_m15ADCC6F2308B6702ED8D17145818A0EE289E07A (SyncTextWriter_t2B0E74B8B5F076D9DAA63A884B64E6AED5454340* __this, const RuntimeMethod* method) 
-{
-	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = __this->____out;
-		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_0);
-		return L_1;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncTextWriter_Dispose_mBA3D006F3D3501B8B77D22FFE1A97AD195B2F678 (SyncTextWriter_t2B0E74B8B5F076D9DAA63A884B64E6AED5454340* __this, bool ___0_disposing, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5100,7 +5057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncTextWriter_Write_mD6F2D23D97FA9A7378
 	{
 		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = __this->____out;
 		Il2CppChar L_1 = ___0_value;
-		VirtualActionInvoker1< Il2CppChar >::Invoke(10, L_0, L_1);
+		VirtualActionInvoker1< Il2CppChar >::Invoke(9, L_0, L_1);
 		return;
 	}
 }
@@ -5109,7 +5066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncTextWriter_Write_m77BEBAEC1B3B1BAD5F
 	{
 		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = __this->____out;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = ___0_buffer;
-		VirtualActionInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* >::Invoke(11, L_0, L_1);
+		VirtualActionInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* >::Invoke(10, L_0, L_1);
 		return;
 	}
 }
@@ -5120,7 +5077,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncTextWriter_Write_m763985B67D1B433378
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = ___0_buffer;
 		int32_t L_2 = ___1_index;
 		int32_t L_3 = ___2_count;
-		VirtualActionInvoker3< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, int32_t, int32_t >::Invoke(12, L_0, L_1, L_2, L_3);
+		VirtualActionInvoker3< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, int32_t, int32_t >::Invoke(11, L_0, L_1, L_2, L_3);
 		return;
 	}
 }
@@ -5129,16 +5086,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncTextWriter_Write_mAE10B440C6480E1864
 	{
 		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = __this->____out;
 		String_t* L_1 = ___0_value;
-		VirtualActionInvoker1< String_t* >::Invoke(13, L_0, L_1);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncTextWriter_WriteLine_m6FDA847F2D438E29015CEE02ADAF1F44224E2695 (SyncTextWriter_t2B0E74B8B5F076D9DAA63A884B64E6AED5454340* __this, String_t* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = __this->____out;
-		String_t* L_1 = ___0_value;
-		VirtualActionInvoker1< String_t* >::Invoke(14, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(12, L_0, L_1);
 		return;
 	}
 }
@@ -20595,7 +20543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CStreamWriter_Write_mBD4E67DACC8983690EB
 	{
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_0 = ___0_val;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = ___0_val;
-		VirtualActionInvoker3< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, int32_t, int32_t >::Invoke(12, __this, L_0, 0, ((int32_t)(((RuntimeArray*)L_1)->max_length)));
+		VirtualActionInvoker3< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, int32_t, int32_t >::Invoke(11, __this, L_0, 0, ((int32_t)(((RuntimeArray*)L_1)->max_length)));
 		return;
 	}
 }
@@ -20627,7 +20575,7 @@ IL_0004:
 		String_t* L_3 = ___0_val;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_4;
 		L_4 = String_ToCharArray_m0699A92AA3E744229EF29CB9D943C47DF4FE5B46(L_3, NULL);
-		VirtualActionInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* >::Invoke(11, __this, L_4);
+		VirtualActionInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* >::Invoke(10, __this, L_4);
 		return;
 	}
 
@@ -20658,17 +20606,6 @@ CATCH_0028:
 
 IL_002b:
 	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CStreamWriter_WriteLine_mA01BC2C9A80D4B4A660C3480FAF8B5F16D77B940 (CStreamWriter_t3311453DAB9CB3E60FD80FD196E9421A8EDF8239* __this, String_t* ___0_val, const RuntimeMethod* method) 
-{
-	{
-		String_t* L_0 = ___0_val;
-		VirtualActionInvoker1< String_t* >::Invoke(13, __this, L_0);
-		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(9, __this);
-		VirtualActionInvoker1< String_t* >::Invoke(13, __this, L_1);
 		return;
 	}
 }

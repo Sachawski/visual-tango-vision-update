@@ -14,7 +14,7 @@
             </p>
         </div>
         <div class="div_form" id="form1">
-            <form action="/visualtango" method="post" enctype="multipart/form-data" autocomplete="off">
+            <form action="{{ url_for('visualtango',id=id)}}" method="post" enctype="multipart/form-data" autocomplete="off">
                 
                 <input type="submit" value="Lancer" onclick="createLoader('form1')">
             </form>
@@ -29,7 +29,7 @@
             </p>
         </div>
         <div class="div_form" id="form2">
-            <form action="/classification" method="post" enctype="multipart/form-data" autocomplete="off">
+            <form action="{{ url_for('classification',id=id)}}" method="post" enctype="multipart/form-data" autocomplete="off">
                 <input type="file" name="input_file1" accept="video/">
                 <input type="submit" value="Envoyer" onclick="createLoader('form2')">
             </form>
@@ -47,7 +47,6 @@
                 <input type="submit" value="Envoyer" onclick="createLoader('form3')">
             </form>
         </div>  
-        <p> id : {{id}}</p>
         <div> Please note that the calculation may take some time</div>
         
     </body>
@@ -80,7 +79,13 @@
             }
 
         </script>
-
+        <script>
+            // JavaScript code to handle navigation and page reload
+            if (localStorage.getItem('reloadPage')) {
+                localStorage.removeItem('reloadPage');
+                location.reload(true);
+            }
+        </script>
     </footer>
 
 </html>
