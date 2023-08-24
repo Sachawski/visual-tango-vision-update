@@ -16,23 +16,24 @@ You will have all the requirements to run the project on a falsk development ser
 If you want to deploy it on Heroku, just push it to your remote branch.
 
 ## Usage
-If you want to se ean example of what it can allow to do here is one : [LINK]
+If you want to see an example of what it can allow to do here is one : [LINK]
 
 ## Roadmap
-Maybe it would be interesting to find another way of classifying the landmarks positions of the bodypose or the angle of the articulations. We've struggled on making the classification.
-For deployment, we've choose Heroku, so just modify the configuration files, such as Procfile or requirements.txt as you modify the project
-As Heroku is not convenient for large file upload, we tried to add an external storage service, in this case Cloudinary. It is not finished, so we must add the management of this API.
-It will allow the Celery worker to access the video uploaded by the user and to process it. 
 
-Here is a list of things to do :
+It may be worthwhile to explore alternative methods for classifying landmark positions in body poses or angles of articulations. We encountered challenges in achieving this classification.
+Regarding deployment, we opted for Heroku. To this end, adjust configuration files like the Procfile or requirements.txt as you modify the project.
+Since Heroku is not convenient for large file uploads, we attempted to integrate an external storage service, specifically Cloudinary. This integration remains unfinished, necessitating the addition of API management.
+This will enable the Celery worker to access user-uploaded videos and process them.
 
-Upload the video from the client to Cloudinary. 
-Download the video from Cloudinary to the celery worker.
-Process the video.
-Return the result to the server.
+Outlined below are the steps to take:
+
+    Upload the video from the client to Cloudinary.
+    Download the video from Cloudinary to the Celery worker.
+    Process the video.
+    Return the result to the server.
 
 It will allow the modelisation to work, and if the classification is improved, it will also work.
 
 
 ## Project status
-Development as STOPPED.
+Development has been STOPPED.
