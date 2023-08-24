@@ -11,12 +11,22 @@ mp_pose = mp.solutions.pose
 ############################################################################################################################################
 
 POSE_ARTICULATIONS = {
+    # Dictionary of pose articulations mapping to their indices.
     14:(12,14,16), 13:(11,13,15), 24:(12,24,26), 23:(11,23,25), 26:(24,26,28), 25:(23,25,27),
     28:(26,28,32), 27:(25,27,31), 12:(24,12,11)
 }
 
 def coordinate_system_initialisation(lmList,articulation):
-   
+    """
+    Initialize the coordinate system for a specific articulation.
+
+    Args:
+        lmList (numpy.array): Landmark list.
+        articulation (int): Index of the articulation.
+
+    Returns:
+        tuple: Tuple containing the coordinate system vectors.
+    """   
     p1 = POSE_ARTICULATIONS[articulation][0]
     p2 = POSE_ARTICULATIONS[articulation][1]
     p3 = POSE_ARTICULATIONS[articulation][2]
@@ -49,15 +59,24 @@ def coordinate_system_initialisation(lmList,articulation):
 ############################################################################################################################################
 
 def process_image(image_path, all_poses, nompose):
-    process = True
+    """
+    Process a video to extract pose landmarks and angles.
 
+    Args:
+        image_path (str): Path to the video file.
+        all_poses (dict): Dictionary to store pose angles for different poses.
+        nompose (str): Name of the pose.
+
+    Returns:
+        dict: Updated dictionary containing pose angles.
+    """
+    process = True
     #Processing of the video 
     with mp_pose.Pose(min_detection_confidence=0.5,min_tracking_confidence=0.5) as pose:
         #import the video to process
         video = cv2.VideoCapture(image_path)
         width,height = video.get(cv2.CAP_PROP_FRAME_WIDTH),video.get(cv2.CAP_PROP_FRAME_HEIGHT)
         n = 33
-        all_angles = {}
         frame = 0
         while process:
             success,img = video.read()
@@ -116,20 +135,3 @@ def process_image(image_path, all_poses, nompose):
     video.release()
     all_poses[nompose] = new_lmList
     return all_poses
-
-all_poses={}
-# Read pose names from a file.
-with open("pose_names.txt", 'r') as file:
-    pose_names = [line.strip() for line in file]
-
-# Process each image.
-for i in range(8037, 8093):
-    image_path = f"input/image0{i}.jpeg"
-    nompose = pose_names[i - 8037]  # Get corresponding pose name.
-    print(i-8036,nompose)
-    all_poses = process_image(image_path, all_poses, nompose)
-
-# Write poses back to file.
-all_poses_string = str(all_poses)
-with open("src/output/suiteposition.txt", 'w') as file:
-    file.write(all_poses_string)

@@ -30,18 +30,21 @@ public class reset : MonoBehaviour
         GameObject leg_r = GameObject.Find("RightUpLeg");
         GameObject leg_l = GameObject.Find("LeftUpLeg");
         GameObject woman = GameObject.Find("Spine");
+        GameObject hips = GameObject.Find("Hips");
         model.transform.eulerAngles = new Vector3(0, 180, 0);
         model.transform.position = new Vector3(0, 0, (float)-6.99);
         Animator ani = leg_l.GetComponent<Animator>();
         Animator ani0 = leg_r.GetComponent<Animator>();
         Animator ani1 = woman.GetComponent<Animator>();
         Animator ani2 = model.GetComponent<Animator>();
+        Animator ani3 = hips.GetComponent<Animator>();
         ani.SetInteger("state", 0);
         ani.SetInteger("hi", 0);
         ani0.SetInteger("state", 0);
         ani0.SetInteger("hi", 0);
         ani1.SetInteger("face", 0);
         ani2.SetInteger("state", 0);
+        ani3.SetInteger("lean",0);
         ind.i = -1;
     }
 }

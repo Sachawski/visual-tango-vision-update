@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import math
-
+from flask_socketio import SocketIO,emit
 import ast
 
 mp_drawing = mp.solutions.drawing_utils
@@ -14,19 +14,30 @@ mp_pose = mp.solutions.pose
 
 
 POSE_ARTICULATIONS = {
+    # Dictionary of pose articulations mapping to their indices.
     14:(12,14,16), 13:(11,13,15), 24:(12,24,26), 23:(11,23,25), 26:(24,26,28), 25:(23,25,27),
     28:(26,28,32), 27:(25,27,31)
 }
 
 COORDINATE_SYSTEM_INIT_DICT = {
+    # Dictionary of coordinate system initializations.
     24:(12,24,23), 23:(11,23,24)
 } 
 
+# List of articulation indices.
 ARTICULATIONS = set([13,14,24,23,26,25,28,27])
 
 def coordinate_system_initialisation(lmList,articulation):
-   
-    
+    """
+    Initialize the coordinate system for a specific articulation.
+
+    Args:
+        lmList (numpy.array): Landmark list.
+        articulation (int): Index of the articulation.
+
+    Returns:
+        tuple: Tuple containing the coordinate system vectors.
+    """    
     if articulation == 24 or articulation ==23:
         p1 = COORDINATE_SYSTEM_INIT_DICT[articulation][0]
         p2 = COORDINATE_SYSTEM_INIT_DICT[articulation][1]
@@ -71,25 +82,20 @@ def coordinate_system_initialisation(lmList,articulation):
         P = np.array([[OX[0],OY[0],OZ[0]],
                     [OX[1],OY[1],OZ[1]],
                     [OX[2],OY[2],OZ[2]]])
-    """
-    fig = plt.figure()
-    ax = plt.axes(projection='3d')
-    ax.scatter3D(lmList[:,0],lmList[:,1],lmList[:,2], cmap='Greens')
-    ax.plot3D([O[0],OX[0]+O[0]],
-                [O[1],OX[1]+O[1]],
-                [O[2],OX[2]+O[2]],c="Blue")
-    ax.plot3D([O[0],OY[0]+O[0]],
-                [O[1],OY[1]+O[1]],
-                [O[2],OY[2]+O[2]],c="Red")
-    ax.plot3D([O[0],OZ[0]+O[0]],
-                [O[1],OZ[1]+O[1]],
-                [O[2],OZ[2]+O[2]],c="green")
-    set_axes_equal(ax)
-    plt.show()"""
     return O,OX,OY,OZ,P     
     
 def angle(lmList,articulation,coordinate_system):
+    """
+    Calculate angles for a specific articulation.
 
+    Args:
+        lmList (numpy.array): Landmark list.
+        articulation (int): Index of the articulation.
+        coordinate_system (dict): Dictionary containing the coordinate system for each articulation.
+
+    Returns:
+        dict: Dictionary containing angles in degrees.
+    """
     p1 = POSE_ARTICULATIONS[articulation][0]
     p2 = POSE_ARTICULATIONS[articulation][1]
     p3 = POSE_ARTICULATIONS[articulation][2]
@@ -150,6 +156,15 @@ def angle(lmList,articulation,coordinate_system):
 ############################################################################################################################################
 
 def process_image(file):
+    """
+    Process a video file and calculate angles for each frame.
+
+    Args:
+        file (str): Path to the video file.
+
+    Returns:
+        dict: Dictionary containing angles for each frame.
+    """
     # Processing code goes here.
     process = True
         #Processing of the video 
@@ -217,23 +232,3 @@ def process_image(file):
     cv2.destroyAllWindows()
     video.release()
     return all_poses
-
-"""
-if __name__ == "__main__":
-    all_poses={}
-    # Read pose names from a file.
-    with open("src/input/pose_names.txt", 'r') as file:
-        pose_names = [line.strip() for line in file]
-
-    # Process each image.
-    for i in range(8037, 8093):
-        image_path = f"input/image0{i}.jpeg"
-        nompose = pose_names[i - 8037]  # Get corresponding pose name.
-        print(i-8036,nompose)
-        all_poses = process_image(image_path, all_poses, nompose)
-
-    # Write poses back to file.
-    all_poses_string = str(all_poses)
-    with open("src/output/suiteangle.txt", 'w') as file:
-        file.write(all_poses_string)
-"""

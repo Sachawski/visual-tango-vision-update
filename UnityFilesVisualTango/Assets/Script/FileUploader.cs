@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -46,7 +46,7 @@ public static class FileUploaderHelper
     public static void RequestFile(Action<string> callback, string extensions = ".txt")
     {
         RequestUserFile(extensions);
-        pathCallback = callback;x
+        pathCallback = callback;
     }
 
     /// <summary>
@@ -74,4 +74,4 @@ public static class FileUploaderHelper
 
     [DllImport("__Internal")]
     private static extern void ResetFileLoader();
-}*/
+}

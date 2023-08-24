@@ -16,6 +16,7 @@ public class face : MonoBehaviour
         GameObject.Find("Pose").GetComponent<Dropdown>().onValueChanged.AddListener(pose);
         GameObject.Find("Position").GetComponent<Dropdown>().onValueChanged.AddListener(position);
         GameObject.Find("Rotate").GetComponent<Dropdown>().onValueChanged.AddListener(rotate);
+        GameObject.Find("Leaning").GetComponent<Dropdown>().onValueChanged.AddListener(lean);
         //GameObject.Find("RotateAnkle").GetComponent<Dropdown>().onValueChanged.AddListener(rotankle);
     }
 
@@ -31,7 +32,7 @@ public class face : MonoBehaviour
     int pos = 0;
     //int rot = 0;
     int pre_wei = 0;
-    int rot_ank = 0;    
+    private Toggle rotate_dir;
 
     // weighted leg pose
     public void show()
@@ -44,11 +45,6 @@ public class face : MonoBehaviour
         Animator ani = leg_l.GetComponent<Animator>();
         GameObject leg_r = GameObject.Find("RightUpLeg");
         Animator ani0 = leg_r.GetComponent<Animator>();
-        GameObject ankle_r = GameObject.Find("RightFoot");
-        Animator ani_ankle_r = ankle_r.GetComponent<Animator>();
-        GameObject ankle_l = GameObject.Find("LeftFoot");
-        Animator ani_ankle_l = ankle_l.GetComponent<Animator>();
-        
         if (wei == 0) // right leg weighted
         {
             ani0.SetInteger("state", 0);
@@ -67,9 +63,6 @@ public class face : MonoBehaviour
                 ani0.SetInteger("hi", 0);
                 ani.SetInteger("hi", 0);
             }
-            ani_ankle_l.SetInteger("state",rot_ank);
-            Debug.Log(rot_ank);
-            ani_ankle_r.SetInteger("state",0);
             ani.SetInteger("state", pos);
         }
         else
@@ -90,8 +83,6 @@ public class face : MonoBehaviour
                 ani0.SetInteger("hi", 0);
                 ani.SetInteger("hi", 0);
             }        
-            ani_ankle_r.SetInteger("state",rot_ank);
-            ani_ankle_l.SetInteger("state",0);
             ani0.SetInteger("state", pos);
             
         }
@@ -101,36 +92,41 @@ public class face : MonoBehaviour
     
     void rotate(int value)
     {
+        int rota_dir = 1;
+        rotate_dir = GameObject.Find("rotate_dir").GetComponent<Toggle>();
+        if (!rotate_dir.isOn)
+            rota_dir = -rota_dir;
+
         switch(value){
             case 0:
-                isTurning.r = 0;
+                isTurning.r = rota_dir*0;
                 break;
             case 1:
-                isTurning.r = 30;
+                isTurning.r = rota_dir*30;
                 break;    
             case 2:
-                isTurning.r = 60;
+                isTurning.r = rota_dir*60;
                 break;
             case 3:
-                isTurning.r = 90;
+                isTurning.r = rota_dir*90;
                 break;
             case 4:
-                isTurning.r = 120;
+                isTurning.r = rota_dir*120;
                 break;
             case 5:
-                isTurning.r = 150;
+                isTurning.r = rota_dir*150;
                 break;
             case 6:
-                isTurning.r = 180;
+                isTurning.r = rota_dir*180;
                 break;    
             case 7:
-                isTurning.r = 270;
+                isTurning.r = rota_dir*270;
                 break;
-            case 38:
-                isTurning.r = 360;
+            case 8:
+                isTurning.r = rota_dir*360;
                 break;
-
         }
+        show();
     }
 
     // calculate how far the women moves totally
@@ -197,6 +193,7 @@ public class face : MonoBehaviour
     // changing free leg pose
     public void pose(int value)
     {
+        print(value);
         switch (value)
         {
             case 0:
@@ -300,6 +297,31 @@ public class face : MonoBehaviour
                 //if (dir == 0)
                 //    ani.SetInteger("face", 1);
                 dir = 2;
+                break;
+        }
+        show();
+    }
+
+    public void lean(int value)
+    {
+        GameObject hips = GameObject.Find("Hips");
+        Animator ani_hips = hips.GetComponent<Animator>();
+        switch (value)
+        {
+            case 0:
+                if (ani_hips.isActiveAndEnabled){
+                    ani_hips.SetInteger("lean",0);
+                }
+                break;
+            case 1:
+                if (ani_hips.isActiveAndEnabled){
+                    ani_hips.SetInteger("lean",1);
+                }
+                break;
+            case 2:
+                if (ani_hips.isActiveAndEnabled){
+                    ani_hips.SetInteger("lean",2);
+                }
                 break;
         }
         show();

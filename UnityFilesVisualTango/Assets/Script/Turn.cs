@@ -9,7 +9,6 @@ public class Turn : MonoBehaviour
 {
     private Transform thisTransform;
     public float timerNow = 0;
-    private Toggle rotate_dir;
 
     //float[] angle = { 0, 30, 60, 90, 120, 150, 180, 270, 360 };
     // Start is called before the first frame update
@@ -28,10 +27,8 @@ public class Turn : MonoBehaviour
     public void playAnimation(float a)
 
     {
-        rotate_dir = GameObject.Find("rotate_dir").GetComponent<Toggle>();
-        if (!rotate_dir.isOn)
-            a = -a;
-
+        print(a);
+        print(isTurning.r);
         float allTimer = 0.20f / Time.timeScale;
         float del_a = a * Time.deltaTime / allTimer;
         if (timerNow < allTimer)

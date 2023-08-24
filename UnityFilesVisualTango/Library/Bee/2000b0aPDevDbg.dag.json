@@ -99,8 +99,8 @@
       "DisplayName": "Writing UnityEngine.UI.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
       "PayloadOffset": 105,
-      "PayloadLength": 93,
-      "PayloadDebugContentSnippet": "/home/sacha/Desktop/visualtang",
+      "PayloadLength": 87,
+      "PayloadDebugContentSnippet": "/home/sacha/Documents/stage/Gi",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/2000b0aPDevDbg.dag/UnityEngine.UI.UnityAdditionalFile.txt"
@@ -111,7 +111,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/2000b0aPDevDbg.dag/UnityEngine.UI.rsp",
       "DisplayName": "Writing UnityEngine.UI.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 289,
+      "PayloadOffset": 283,
       "PayloadLength": 34651,
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
@@ -124,9 +124,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/2000b0aPDevDbg.dag/UnityEngine.UI.rsp2",
       "DisplayName": "Writing UnityEngine.UI.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 35032,
-      "PayloadLength": 106,
-      "PayloadDebugContentSnippet": "/pathmap:\"/home/sacha/Desktop/",
+      "PayloadOffset": 35026,
+      "PayloadLength": 100,
+      "PayloadDebugContentSnippet": "/pathmap:\"/home/sacha/Document",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/2000b0aPDevDbg.dag/UnityEngine.UI.rsp2"
@@ -1484,7 +1484,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/2000b0aPDevDbg.dag/UnityEngine.UI.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.UI.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 35239,
+      "PayloadOffset": 35227,
       "PayloadLength": 5463,
       "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
       "Inputs": [],
@@ -1643,9 +1643,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/2000b0aPDevDbg.dag/Assembly-CSharp.UnityAdditionalFile.txt",
       "DisplayName": "Writing Assembly-CSharp.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 40814,
-      "PayloadLength": 93,
-      "PayloadDebugContentSnippet": "/home/sacha/Desktop/visualtang",
+      "PayloadOffset": 40802,
+      "PayloadLength": 87,
+      "PayloadDebugContentSnippet": "/home/sacha/Documents/stage/Gi",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/2000b0aPDevDbg.dag/Assembly-CSharp.UnityAdditionalFile.txt"
@@ -1656,7 +1656,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/2000b0aPDevDbg.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 40999,
+      "PayloadOffset": 40981,
       "PayloadLength": 28474,
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
@@ -1669,7 +1669,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/2000b0aPDevDbg.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 69566,
+      "PayloadOffset": 69548,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -1946,7 +1946,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/2000b0aPDevDbg.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 69668,
+      "PayloadOffset": 69650,
       "PayloadLength": 5538,
       "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
       "Inputs": [],
@@ -2166,7 +2166,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)",
       "DisplayName": "BuildPlayerDataGenerator RuntimeInitializeOnLoads",
-      "Action": "\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/home/sacha/Desktop/visualtango-visionupdate-main-UnityFilesVisualTango/UnityFilesVisualTango/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll\" -a=\"/home/sacha/Desktop/visualtango-visionupdate-main-UnityFilesVisualTango/UnityFilesVisualTango/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed/UnityEngine\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed\" -s=\"/home/sacha/Desktop/visualtango-visionupdate-main-UnityFilesVisualTango/UnityFilesVisualTango/Library/Bee/PlayerScriptAssemblies\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/UnityFilesVisualTango/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll\" -a=\"/home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/UnityFilesVisualTango/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed/UnityEngine\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed\" -s=\"/home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/UnityFilesVisualTango/Library/Bee/PlayerScriptAssemblies\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/netcorerun/netcorerun",
         "/home/sacha/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -2348,6 +2348,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/2000b0aPDevDbg.dag.json",
-  "PayloadsFile": "/home/sacha/Desktop/visualtango-visionupdate-main-UnityFilesVisualTango/UnityFilesVisualTango/Library/Bee/2000b0aPDevDbg.dag.payloads",
+  "PayloadsFile": "/home/sacha/Documents/stage/GitRepository/visualtangovisionupdate/UnityFilesVisualTango/Library/Bee/2000b0aPDevDbg.dag.payloads",
   "RelativePathToRoot": "../.."
 }

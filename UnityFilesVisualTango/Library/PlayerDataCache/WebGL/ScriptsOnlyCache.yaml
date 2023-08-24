@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraFollow
+    - PlayPauseButton
     - Turn
     - around
     - delete
@@ -25,6 +26,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -34,9 +36,11 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     UnityEngine.CoreModule:
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.RectOffset
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -92,65 +96,69 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1558}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1586}
+      Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1632}
+      Script: {instanceID: 1588}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1674}
+      Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 1682}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1722}
+      Script: {instanceID: 1652}
     - Class: 114
-      Script: {instanceID: 1772}
+      Script: {instanceID: 1678}
     - Class: 114
-      Script: {instanceID: 1782}
+      Script: {instanceID: 1686}
     - Class: 114
-      Script: {instanceID: 1792}
+      Script: {instanceID: 1726}
     - Class: 114
-      Script: {instanceID: 1804}
+      Script: {instanceID: 1776}
+    - Class: 114
+      Script: {instanceID: 1786}
+    - Class: 114
+      Script: {instanceID: 1796}
+    - Class: 114
+      Script: {instanceID: 1802}
     - Class: 114
       Script: {instanceID: 1808}
     - Class: 114
       Script: {instanceID: 1812}
     - Class: 114
-      Script: {instanceID: 1814}
+      Script: {instanceID: 1816}
     - Class: 114
-      Script: {instanceID: 1840}
+      Script: {instanceID: 1818}
     - Class: 114
-      Script: {instanceID: 1848}
+      Script: {instanceID: 1844}
     - Class: 114
-      Script: {instanceID: 1862}
+      Script: {instanceID: 1852}
     - Class: 114
-      Script: {instanceID: 1872}
+      Script: {instanceID: 1866}
     - Class: 114
-      Script: {instanceID: 1874}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 1904}
+      Script: {instanceID: 1878}
     - Class: 114
-      Script: {instanceID: 1916}
+      Script: {instanceID: 1918}
     - Class: 114
-      Script: {instanceID: 1920}
+      Script: {instanceID: 1922}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 2014}
     - Class: 114
-      Script: {instanceID: 2022}
+      Script: {instanceID: 2024}
     - Class: 114
-      Script: {instanceID: 18316}
+      Script: {instanceID: 18504}
     - Class: 114
-      Script: {instanceID: 18318}
+      Script: {instanceID: 21804}
     - Class: 114
-      Script: {instanceID: 44400}
+      Script: {instanceID: 21810}
     - Class: 114
-      Script: {instanceID: 44406}
+      Script: {instanceID: 21816}
     - Class: 114
-      Script: {instanceID: 44412}
-    - Class: 114
-      Script: {instanceID: 44414}
+      Script: {instanceID: 21818}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,6 +182,12 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 0b7995e6c59201aa9b4ad6a0aecb4621
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -212,6 +226,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: f6ccb5c6743fcaf93e8d915bf5208d2f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayPauseButton
+  - hash:
+      serializedVersion: 2
       Hash: 0249933f35dcc970b31eaae0159aebf9
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -236,7 +256,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 630af2fea8ed910ca985a95a0d9e6d3f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: delete
@@ -338,7 +358,7 @@ ScriptsOnlyBuild:
     className: around
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: ca87d50f76b24d2d60d54e144678d529
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: play
@@ -380,7 +400,7 @@ ScriptsOnlyBuild:
     className: face
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 630af2fea8ed910ca985a95a0d9e6d3f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: load_file
@@ -410,19 +430,13 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 0b7995e6c59201aa9b4ad6a0aecb4621
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: fff1a32deae5d332d9da4054ff9bffa2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CameraFollow
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 630af2fea8ed910ca985a95a0d9e6d3f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: save
@@ -468,6 +482,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FileUploader
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -3,6 +3,15 @@ import numpy as np
 
 
 def pose_to_matrix(pose_data):
+    """
+    Convert pose data dictionary to a matrix representation.
+
+    Args:
+        pose_data (dict): Dictionary containing pose angle data for specific joints.
+
+    Returns:
+        numpy.ndarray: Matrix representation of pose data.
+    """
     joints = ['RightHip', 'LeftHip', 'RightKnee', 'LeftKnee', 'RightAnkle', 'LeftAnkle']
     matrix = np.zeros((len(joints), 3))
 
