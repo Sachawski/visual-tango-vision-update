@@ -22,7 +22,7 @@ Flask==2.0.3
 Flask-SocketIO==5.3.3
 Flask-SSE==1.0.0
 flatbuffers==23.5.26
-fonttools==4.38.0
+fonttools==4.43.0
 greenlet==2.0.2
 gunicorn==21.2.0
 idna==3.4
