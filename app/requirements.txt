@@ -16,7 +16,7 @@ click-plugins==1.1.1
 click-repl==0.3.0
 cloudinary==1.34.0
 cycler==0.11.0
-dnspython==2.3.0
+dnspython==2.6.1
 eventlet==0.40.3
 Flask==2.2.5
 Flask-SocketIO==5.3.3
