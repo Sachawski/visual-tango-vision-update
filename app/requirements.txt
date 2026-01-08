@@ -24,7 +24,7 @@ Flask-SSE==1.0.0
 flatbuffers==23.5.26
 fonttools==4.38.0
 greenlet==2.0.2
-gunicorn==21.2.0
+gunicorn==22.0.0
 idna==3.4
 importlib-metadata==4.13.0
 itsdangerous==2.1.2
